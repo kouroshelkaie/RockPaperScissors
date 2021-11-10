@@ -1,0 +1,86 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+body {
+  background-color: #182833;
+  font-family: "Press Start 2P", cursive;
+}
+/* ======== */
+.outer_container {
+  width: 50%;
+  margin: 8em auto;
+}
+@media (max-width: 1000px) {
+  .outer_container {
+    width: 70%;
+  }
+}
+@media (max-width: 600px) {
+  .outer_container {
+    width: 90%;
+  }
+}
+.computer {
+  display: flex;
+  background-color: #153040;
+  justify-content: center;
+  height: 20%;
+}
+.computer span {
+  font-size: 7em;
+  /* margin: .5em 0; */
+  display: none;
+}
+.player {
+  display: flex;
+  justify-content: space-around;
+  background-color: #1f4762;
+  /* padding: 1em 0; */
+}
+.player > span {
+  cursor: pointer;
+  font-size: 6vw;
+  margin: 0.3em 1em;
+}
+.score {
+  display: flex;
+  justify-content: space-AROUND;
+  padding: 1em 0;
+  background-color: #153040;
+  color: #fff;
+}
+.score > span {
+  font-size: 1vw;
+}
+@media (max-width: 900px) {
+  .score > span {
+    font-size: 1.2vw;
+  }
+}
+@media (max-width: 768px) {
+  .score > span {
+    font-size: 1.4vw;
+  }
+}
+#reset {
+  background-color: #f7c64b;
+  cursor: pointer;
+  text-align: center;
+  padding: 1em 0;
+}
+#ps,
+#cs {
+  color: #f7c64b;
+  font-weight: bold;
+}
